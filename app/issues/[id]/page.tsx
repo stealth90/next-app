@@ -14,6 +14,7 @@ const IssueDetailPage: React.FC<IssueDetailPageProps> = async ({ params }) => {
   const issue = await prisma.issue.findUnique({ where: { id: parseInt(params.id) } });
 
   if (!issue) notFound();
+
   return (
     <div>
       <Heading>{issue.title}</Heading>
