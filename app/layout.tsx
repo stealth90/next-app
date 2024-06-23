@@ -1,6 +1,7 @@
 import '@radix-ui/themes/styles.css';
 import './globals.css';
 import './theme-config.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Theme } from '@radix-ui/themes';
